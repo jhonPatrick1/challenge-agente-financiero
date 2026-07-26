@@ -143,8 +143,8 @@ La aplicación está completamente desplegada y funcionando públicamente en Ora
 
 *(Reemplaza las siguientes rutas de imagen con las capturas de pantalla de tu instancia en OCI y la app corriendo en producción)*
 
-![App Desplegada en OCI](./despliegue/ejecutado.png)
-![Panel de Instancia OCI](./despliegue/ejecutado1.png)
+![App Desplegada en OCI](./ejecutado.png)
+![Panel de Instancia OCI](./ejecutado1.png)
 
 ---
 
