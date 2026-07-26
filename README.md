@@ -43,8 +43,13 @@ El flujo del sistema se basa en una arquitectura Serverless Full-Stack que separ
        │         Motor LLM (Google Gemini 3 Flash Preview)       │
        │    Procesamiento Multimodal (Documento + Texto)         │
        └─────────────────────────────────────────────────────────┘
-📁 Estructura del Proyecto
-Plaintext
+```
+
+---
+
+## 📁 Estructura del Proyecto
+
+```text
 challenge-agente-financiero/
 ├── app/
 │   ├── api/chat/route.ts      # Lógica del backend y conexión con Gemini
@@ -57,73 +62,99 @@ challenge-agente-financiero/
 ├── tailwind.config.ts         # Configuración de estilos de Tailwind
 ├── package.json               # Dependencias y scripts del proyecto
 └── README.md                  # Documentación principal
-🚀 Instalación
-Prerrequisitos
-Node.js (Versión 18 o superior).
+```
 
-API Key de Google Gemini (Gratuita en Google AI Studio).
+---
 
-Paso 1: Clonar el repositorio
-Bash
-git clone [https://github.com/TU_USUARIO/challenge-agente-financiero.git](https://github.com/TU_USUARIO/challenge-agente-financiero.git)
+## 🚀 Instalación
+
+### Prerrequisitos
+*   **Node.js** (Versión 18 o superior).
+*   **API Key de Google Gemini** (Gratuita en Google AI Studio).
+
+### Paso 1: Clonar el repositorio
+
+```bash
+git clone https://github.com/TU_USUARIO/challenge-agente-financiero.git
 cd challenge-agente-financiero
-Paso 2: Instalar dependencias
-Bash
+```
+
+### Paso 2: Instalar dependencias
+
+```bash
 npm install
-Paso 3: Configurar variables de entorno
-Crea un archivo llamado .env.local en la raíz del proyecto y agrega tu clave API:
+```
 
-Fragmento de código
+### Paso 3: Configurar variables de entorno
+
+Crea un archivo llamado `.env.local` en la raíz del proyecto y agrega tu clave API:
+
+```env
 GEMINI_API_KEY=tu_api_key_aqui
-Paso 4: Ejecutar la aplicación
-Bash
+```
+
+### Paso 4: Ejecutar la aplicación
+
+```bash
 npm run dev
-La aplicación estará disponible de forma local en http://localhost:3000.
+```
+La aplicación estará disponible de forma local en `http://localhost:3000`.
 
-📖 Uso
-Cargar documentos: El PDF de conocimiento (Manual_Operativo_ZIndex.pdf) ya se encuentra pre-cargado en la carpeta /docs.
+---
 
-Interacción Rápida: Haz clic en cualquiera de los chips de sugerencia en la pantalla de inicio para enviar una consulta predefinida.
+## 📖 Uso
 
-Consultas Específicas: Utiliza la barra inferior para escribir preguntas detalladas sobre la aplicación del método de amortización alemán o las políticas de desembolso.
+1.  **Cargar documentos:** El PDF de conocimiento (`Manual_Operativo_ZIndex.pdf`) ya se encuentra pre-cargado en la carpeta `/docs`.
+2.  **Interacción Rápida:** Haz clic en cualquiera de los chips de sugerencia en la pantalla de inicio para enviar una consulta predefinida.
+3.  **Consultas Específicas:** Utiliza la barra inferior para escribir preguntas detalladas sobre la aplicación del método de amortización alemán o las políticas de desembolso.
+4.  **Explorar:** El agente responderá basándose estrictamente en el PDF oficial y generará nuevas preguntas de seguimiento (sugerencias dinámicas) para continuar la conversación.
+5.  **Limpiar:** Usa el botón "Limpiar sesión" en la barra lateral para reiniciar la conversación.
 
-Explorar: El agente responderá basándose estrictamente en el PDF oficial y generará nuevas preguntas de seguimiento (sugerencias dinámicas) para continuar la conversación.
+---
 
-Limpiar: Usa el botón "Limpiar sesión" en la barra lateral para reiniciar la conversación.
+## 💡 Ejemplos de Preguntas y Respuestas
 
-💡 Ejemplos de Preguntas y Respuestas
 El agente es capaz de responder consultas complejas sobre el sistema financiero apoyándose en la base de conocimiento:
 
-❓ Ejemplo 1: Estructuración de Préstamos
-Pregunta: ¿Por qué mis cuotas disminuyen cada mes con el método alemán?
-Respuesta del Agente:
+### ❓ Ejemplo 1: Estructuración de Préstamos
 
-Bajo el método de amortización alemán, la porción del capital que devuelves en cada período es una cuota fija. Los intereses se calculan únicamente sobre el saldo deudor restante en ese mes específico. Al ir reduciéndose tu deuda constante, el interés generado es menor, resultando en una cuota total decreciente.
+**Pregunta:** ¿Por qué mis cuotas disminuyen cada mes con el método alemán?
+**Respuesta del Agente:**
+> Bajo el método de amortización alemán, la porción del capital que devuelves en cada período es una cuota fija. Los intereses se calculan únicamente sobre el saldo deudor restante en ese mes específico. Al ir reduciéndose tu deuda constante, el interés generado es menor, resultando en una cuota total decreciente.
 
-❓ Ejemplo 2: Gestión de Liquidez
-Pregunta: ¿Cómo funciona el protocolo de respaldo de capital si no hay liquidez inmediata?
-Respuesta del Agente:
+### ❓ Ejemplo 2: Gestión de Liquidez
 
-De acuerdo con el manual operativo, para asegurar un flujo ininterrumpido en la atención de solicitudes, aplicamos el siguiente proceso:
+**Pregunta:** ¿Cómo funciona el protocolo de respaldo de capital si no hay liquidez inmediata?
+**Respuesta del Agente:**
+> De acuerdo con el manual operativo, para asegurar un flujo ininterrumpido en la atención de solicitudes, aplicamos el siguiente proceso:
+> *   **Activación del Fondo:** Se coordina la inyección de fondos mediante socios financieros externos (Fondo Edwin).
+> *   **Tiempos de SLA:** El desembolso bajo este protocolo se completa generalmente en un plazo de 24 a 48 horas hábiles, a diferencia del plazo de 2 horas para fondos propios.
 
-Activación del Fondo: Se coordina la inyección de fondos mediante socios financieros externos (Fondo Edwin).
+---
 
-Tiempos de SLA: El desembolso bajo este protocolo se completa generalmente en un plazo de 24 a 48 horas hábiles, a diferencia del plazo de 2 horas para fondos propios.
+## ☁️ Evidencia del Despliegue en la Nube (OCI)
 
-☁️ Evidencia del Despliegue en la Nube (OCI)
 La aplicación está completamente desplegada y funcionando públicamente en Oracle Cloud Infrastructure (OCI).
 
-🌐 Enlace público: [REEMPLAZAR_CON_TU_LINK_DE_OCI]
+*   **🌐 Enlace público:** `[REEMPLAZAR_CON_TU_LINK_DE_OCI]`
+*   **💻 Plataforma:** Oracle Cloud Infrastructure (Compute Instance)
 
-💻 Plataforma: Oracle Cloud Infrastructure (Compute Instance)
+### 📸 Evidencias de Despliegue
 
-📸 Evidencias de Despliegue
-(Reemplaza las siguientes rutas de imagen con las capturas de pantalla de tu instancia en OCI y la app corriendo en producción)
+*(Reemplaza las siguientes rutas de imagen con las capturas de pantalla de tu instancia en OCI y la app corriendo en producción)*
 
-👨‍💻 Autor
-Jhon Patrick Cali - Desarrollador Backend & Estudiante de Ingeniería de Sistemas (Universidad César Vallejo)
+![App Desplegada en OCI](./despliegue/app_oci.jpg)
+![Panel de Instancia OCI](./despliegue/panel_oci.jpg)
 
-Challenge Alura - Oracle Next Education (ONE) - AI for Tech
+---
 
-📄 Licencia
+## 👨‍💻 Autor
+
+*   **Jhon Patrick Cali** - Desarrollador Backend & Estudiante de Ingeniería de Sistemas (Universidad César Vallejo)
+*   **Challenge Alura** - Oracle Next Education (ONE) - AI for Tech
+
+---
+
+## 📄 Licencia
+
 Este proyecto fue desarrollado con fines educativos como parte del programa Oracle Next Education.
