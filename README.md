@@ -5,6 +5,12 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Gemini AI](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
+<p align="left">
+  <a href="https://challenge-agente-financiero.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Probar_Aplicación_En_Vivo-10B981?style=for-the-badge&logoColor=white" alt="Ver Demo" />
+  </a>
+</p>
+
 ## 📖 Descripción
 
 Este proyecto es un **agente inteligente** desarrollado como entrega oficial para el **Challenge Alura del programa Oracle Next Education (ONE) - AI for Tech**.
