@@ -141,7 +141,6 @@ La aplicación está completamente desplegada y funcionando públicamente en Ora
 
 ### 📸 Evidencias de Despliegue
 
-*(Reemplaza las siguientes rutas de imagen con las capturas de pantalla de tu instancia en OCI y la app corriendo en producción)*
 
 ![App Desplegada en OCI](./ejecutado.png)
 ![Panel de Instancia OCI](./ejecutado1.png)
