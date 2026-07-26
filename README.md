@@ -143,7 +143,7 @@ El agente es capaz de responder consultas complejas sobre el sistema financiero 
 La aplicación está completamente desplegada y funcionando públicamente en Oracle Cloud Infrastructure (OCI).
 
 *   **🌐 Enlace público:** `https://challenge-agente-financiero.vercel.app/`
-*   **💻 Plataforma:** Oracle Cloud Infrastructure (Compute Instance)
+*   **💻 Plataforma:** Vercel (Cloud Deployment)
 
 ### 📸 Evidencias de Despliegue
 
